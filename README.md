@@ -5,6 +5,7 @@
 # 目录介绍
 
 - src 下为插件代码。
+
 - test-demo 下为测试代码。
 
 # 原理介绍
@@ -14,7 +15,8 @@
 具体参见 oracle 官方文档：
 
 - (javadoc doclet)[https://docs.oracle.com/javase/7/docs/technotes/guides/javadoc/doclet/overview.html]
--(javadoc tools)[https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html]
+
+- (javadoc tools)[https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html]
 
 # 使用介绍
 
