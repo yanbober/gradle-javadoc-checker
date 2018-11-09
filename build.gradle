@@ -1,0 +1,29 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+    jcenter()
+}
+
+dependencies {
+    compile gradleApi()
+    compile 'com.android.tools.build:gradle:3.1.0'
+    compile files(org.gradle.internal.jvm.Jvm.current().toolsJar)
+}
+
+group 'cn.yan'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+uploadArchives{
+    repositories {
+        mavenDeployer {
+            repository(url: uri('./repo'))
+        }
+    }
+}

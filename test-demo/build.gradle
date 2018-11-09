@@ -1,0 +1,53 @@
+apply plugin: 'java'
+apply plugin: 'javadoc.checker'
+
+group 'cn.demo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        maven{
+            url './../repo/'
+        }
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
+        jcenter()
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:+'
+        classpath 'cn.yan:gradle-javadoc-checker:1.0-SNAPSHOT'
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.tools.build:gradle:+'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+javadocChecker {
+    includePackages = ["cn.demo"]
+    outputDirectory = project.rootDir.absolutePath + File.separator + "report"
+}
