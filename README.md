@@ -14,9 +14,9 @@
 
 具体参见 oracle 官方文档：
 
-- (javadoc doclet)[https://docs.oracle.com/javase/7/docs/technotes/guides/javadoc/doclet/overview.html]
+- [javadoc doclet](https://docs.oracle.com/javase/7/docs/technotes/guides/javadoc/doclet/overview.html)
 
-- (javadoc tools)[https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html]
+- [javadoc tools](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html)
 
 # 使用介绍
 
